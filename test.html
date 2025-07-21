@@ -1,37 +1,159 @@
-<!-- Logo and Navigation -->
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="https://jasminmazarod.github.io/smalllogo.jpg" alt="JasminMazaRod Logo" style="height:40px; margin-right: 12px;">
-  <nav>
-    <!-- Example nav links, replace with your actual links if different -->
-    <a href="https://jasminmazarod.github.io/about.html" target="_blank">About</a> |
-    <a href="https://jasminmazarod.github.io/services.html" target="_blank">Services</a> |
-    <a href="https://jasminmazarod.github.io/contact.html" target="_blank">Contact</a> |
-    <a href="https://jasminmazarod.github.io/gallery.html" target="_blank">Gallery</a>
-  </nav>
-</div>
-
-<!-- Your Table -->
-<table border="1">
-  <tr>
-    <th>Section</th>
-    <th>Link</th>
-    <th>Section</th>
-    <th>Link</th>
-    <th>Section</th>
-    <th>Link</th>
-    <th>Section</th>
-    <th>Link</th>
-  </tr>
-  <tr>
-    <td>About</td>
-    <td><a href="https://jasminmazarod.github.io/about.html" target="_blank">about.html</a></td>
-    <td>Services</td>
-    <td><a href="https://jasminmazarod.github.io/services.html" target="_blank">services.html</a></td>
-    <td>Contact</td>
-    <td><a href="https://jasminmazarod.github.io/contact.html" target="_blank">contact.html</a></td>
-    <td>Images</td>
-    <td>
-      <img src="https://jasminmazarod.github.io/smalllogo.jpg" alt="JasminMazaRod Logo" style="max-width:100px; height:auto;">
-    </td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Pages Test - Jasmin Mazariegos</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    body {
+      background-color: pink;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      margin-top: 16px;
+      justify-content: center;
+    }
+    .header-nav img {
+      height: 40px;
+      display: block;
+    }
+    nav a.btn-primary {
+      margin: 0 2px;
+    }
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #b03060;
+      text-align: center;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      letter-spacing: 1px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 2em auto 0 auto;
+      background: rgba(255,255,255,0.7);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(183,48,96,0.10);
+      min-width: 800px;
+    }
+    th, td {
+      border: 1px solid #e75480;
+      padding: 12px 18px;
+      text-align: center;
+      font-size: 1em;
+    }
+    th {
+      background: #e75480;
+      color: #fff;
+      font-weight: 700;
+    }
+    tr:nth-child(even) td {
+      background: #ffd1e1;
+    }
+    tr:nth-child(odd) td {
+      background: #fff;
+    }
+    a.btn-primary {
+      display: inline-block;
+      padding: 0.4em 1em;
+      background-color: #e75480;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      border: none;
+      font-size: 1em;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    a.btn-primary:hover,
+    a.btn-primary:focus {
+      background-color: #b03060;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-nav">
+    <img src="smalllogo.jpg" alt="JasminMazaRod Logo">
+    <nav>
+      <a href="index.html" class="btn-primary">Home</a>
+      <a href="about.html" class="btn-primary">About</a>
+      <a href="services.html" class="btn-primary">Services</a>
+      <a href="gallery.html" class="btn-primary">Gallery</a>
+      <a href="contact.html" class="btn-primary">Contact</a>
+      <a href="test.html" class="btn-primary">Test</a>
+    </nav>
+  </div>
+  <h1>Site Pages Test</h1>
+  <table>
+    <tr>
+      <th>Page Name</th>
+      <th>Public URL</th>
+      <th>Validate</th>
+    </tr>
+    <tr>
+      <td>Home</td>
+      <td>
+        <a href="https://jasminmazarod.github.io/index.html" target="_blank">index.html</a>
+      </td>
+      <td>
+        <a class="btn-primary" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjasminmazarod.github.io%2Findex.html" target="_blank">Validate</a>
+      </td>
+    </tr>
+    <tr>
+      <td>About</td>
+      <td>
+        <a href="https://jasminmazarod.github.io/about.html" target="_blank">about.html</a>
+      </td>
+      <td>
+        <a class="btn-primary" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjasminmazarod.github.io%2Fabout.html" target="_blank">Validate</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Services</td>
+      <td>
+        <a href="https://jasminmazarod.github.io/services.html" target="_blank">services.html</a>
+      </td>
+      <td>
+        <a class="btn-primary" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjasminmazarod.github.io%2Fservices.html" target="_blank">Validate</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Gallery</td>
+      <td>
+        <a href="https://jasminmazarod.github.io/gallery.html" target="_blank">gallery.html</a>
+      </td>
+      <td>
+        <a class="btn-primary" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjasminmazarod.github.io%2Fgallery.html" target="_blank">Validate</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Contact</td>
+      <td>
+        <a href="https://jasminmazarod.github.io/contact.html" target="_blank">contact.html</a>
+      </td>
+      <td>
+        <a class="btn-primary" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjasminmazarod.github.io%2Fcontact.html" target="_blank">Validate</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>
+        <a href="https://jasminmazarod.github.io/test.html" target="_blank">test.html</a>
+      </td>
+      <td>
+        <a class="btn-primary" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjasminmazarod.github.io%2Ftest.html" target="_blank">Validate</a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
