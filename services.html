@@ -5,6 +5,21 @@
   <title>Services - Nails Come to You</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
+  <style>
+    .responsive-iframe-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 20px 0;
+      aspect-ratio: 16 / 9;
+    }
+    .responsive-iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
@@ -25,7 +40,15 @@
     <li>Self-care Consultations</li>
     <li>And more!</li>
   </ul>
-   <p>(c) 2025 Nails Come to You. All Rights Reserved.</p>
+
+  <div class="responsive-iframe-container">
+    <iframe 
+      src="https://calendly.com/maza6216-bears?embed_domain=jasminmazarod.github.io&embed_type=Inline"
+      title="Book an appointment"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p>(c) 2025 Nails Come to You. All Rights Reserved.</p>
 </body>
 </html>
-
