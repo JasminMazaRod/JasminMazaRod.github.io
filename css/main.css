@@ -50,3 +50,15 @@ img {
   color: #fff;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  /* Stack navigation links vertically */
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start; /* Optional: aligns items to the left */
+  }
+
+  /* Enlarge the body font for better readability */
+  body {
+    font-size: 1.2em;
+  }
+}
