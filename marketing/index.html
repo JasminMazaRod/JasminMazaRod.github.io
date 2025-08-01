@@ -1,27 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Nails Come to You - Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nails Come to You - Marketing</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fff;
+        color: #222;
+      }
+      header, nav, main, footer {
+        max-width: 100vw;
+        box-sizing: border-box;
+      }
+      nav {
+        background: #f7c6c7;
+        padding: 1em 2vw;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;
+      }
+      nav a {
+        color: #6b1839;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5em 1vw;
+        border-radius: 4px;
+      }
+      nav a:focus, nav a:hover {
+        background: #ffd6e0;
+        outline: 2px solid #6b1839;
+      }
+      main {
+        padding: 2vw;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      h1, h2, h3 {
+        margin-top: 2vw;
+      }
+      footer {
+        background: #f7c6c7;
+        color: #6b1839;
+        text-align: center;
+        padding: 1em 2vw;
+        font-size: 0.9em;
+      }
+      @media (max-width: 400px) {
+        nav, main, footer {
+          padding: 1vw;
+        }
+      }
+    </style>
   </head>
   <body>
-    <!-- This link is the 'emergency exit' that takes users back to safety (your homepage). -->
-    <a href="index.html">Back to Home</a>
-
-    <!-- The <hr> tag creates a horizontal rule (a line), visually separating sections. -->
-    <hr>
-
-    <!-- ====================================================== -->
-    <!--      START: UNIQUE PAGE CONTENT                       -->
-    <!-- This is where the specific content for each new page -->
-    <!-- (like 'About Us' or 'Our Services') will go.        -->
-    <!-- ====================================================== -->
-    <h1>Nails Come to You</h1>
-    <p>This is where the unique text for this specific page will be.</p>
-    <!-- ====================================================== -->
-    <!--      END: UNIQUE PAGE CONTENT                         -->
-    <!-- ====================================================== -->
-    <hr>
-    <!-- The footer provides consistency and a professional closing on every page. -->
-    <p>(c) 2025 Your Company Name. All Rights Reserved.</p>
+    <header>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/marketing/index.html">Marketing</a>
+        <a href="/marketing/features.html">Features</a>
+        <a href="/marketing/pricing.html">Pricing</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome to Nails Come to You</h1>
+      <p>Your premier mobile nail service. We bring salon quality and relaxation right to your doorstep.</p>
+      <img src="https://via.placeholder.com/600x300?text=Nail+Art" alt="Beautiful nail art sample">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Professional technicians</li>
+        <li>Top-quality products</li>
+        <li>Flexible scheduling</li>
+        <li>Safe, hygienic practices</li>
+      </ul>
+    </main>
+    <footer>
+      &copy; 2025 Nails Come to You. All Rights Reserved.
+    </footer>
   </body>
 </html>
