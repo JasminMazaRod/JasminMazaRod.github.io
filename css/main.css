@@ -50,15 +50,63 @@ img {
   color: #fff;
   text-decoration: none;
 }
+
+/* 6. Marketing image style */
+.marketing-img {
+  width: 90vw;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* 7. Responsive table styling for pricing */
+.marketing-table {
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  background: #fff;
+}
+.marketing-table th,
+.marketing-table td {
+  padding: 1vw;
+  border: 1px solid #e5b3be;
+  text-align: left;
+}
+.marketing-table th {
+  background: #ffd6e0;
+  color: #b03060;
+}
+.marketing-table tr:nth-child(even) {
+  background: #fce6ed;
+}
+
+/* 8. Section spacing for marketing pages */
+.marketing-section {
+  margin: 2em auto;
+  max-width: 650px;
+  padding: 1em 2vw;
+  background: #fff6fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(200,60,120,0.06);
+}
+
+/* 9. Responsive navigation improvements */
 @media (max-width: 768px) {
-  /* Stack navigation links vertically */
   nav ul {
     flex-direction: column;
-    align-items: flex-start; /* Optional: aligns items to the left */
+    align-items: flex-start;
   }
-
-  /* Enlarge the body font for better readability */
   body {
     font-size: 1.2em;
+  }
+  .marketing-img {
+    max-width: 95vw;
+  }
+  .marketing-table {
+    max-width: 98vw;
+    font-size: 0.97em;
   }
 }
