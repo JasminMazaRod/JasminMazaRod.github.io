@@ -1,1 +1,84 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Mountain Bean Café</title>
+  <meta name="description" content="Visit Mountain Bean Café in Colorado. Find our address, hours, and location map. Email us for info or group bookings.">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preload" href="../fonts/yourfont.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Google Analytics 4 (GA-4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRDWD2NNK6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BRDWD2NNK6');
+  </script>
+  <style>
+    .contact-info {
+      margin-bottom: 2em;
+    }
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      border: 0;
+    }
+    .btn-primary {
+      margin-top: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Contact & Visit Us</h1>
+      <div class="contact-info">
+        <h2>Mountain Bean Café</h2>
+        <ul>
+          <li><strong>Address:</strong> 123 Summit Ave, Estes Park, CO 80517</li>
+          <li><strong>Hours:</strong>
+            <ul>
+              <li>Mon–Fri: 7am – 4pm</li>
+              <li>Sat–Sun: 6am – 5pm</li>
+            </ul>
+          </li>
+          <li><strong>Phone:</strong> (970) 555-1234</li>
+        </ul>
+      </div>
+      <div class="map-responsive">
+        <iframe
+          src="https://www.google.com/maps?q=123+Summit+Ave,+Estes+Park,+CO+80517&output=embed"
+          allowfullscreen
+          title="Mountain Bean Café Location Map"></iframe>
+      </div>
+      <a href="mailto:info@mountainbean.com?subject=Contact%20Mountain%20Bean%20Café" class="btn-primary">Email Us</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mountain Bean Café | Crafted by JasminMazaRod</p>
+  </footer>
+</body>
+</html>
