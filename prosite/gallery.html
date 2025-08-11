@@ -1,1 +1,98 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery – Mountain Bean Café</title>
+  <meta name="description" content="Browse our gallery of Mountain Bean Café, featuring cozy spaces, our menu, and breathtaking Colorado views.">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preload" href="../fonts/yourfont.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Google Analytics 4 (GA-4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRDWD2NNK6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BRDWD2NNK6');
+  </script>
+  <style>
+    /* Inline styles for gallery layout if not already in main.css */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+      margin: 2em 0;
+    }
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .gallery-grid a img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .gallery-grid a img:hover, .gallery-grid a img:focus {
+      transform: scale(1.05);
+      outline: 2px solid #ffbe76;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Photo Gallery</h1>
+      <p>
+        Discover the spirit of Mountain Bean Café—from our cozy café corners to the majestic Colorado outdoors and the menu that keeps adventurers coming back!
+      </p>
+      <div class="gallery-grid">
+        <a href="../images/coffeeshop.jpg" target="_blank">
+          <img src="../images/coffeeshop.jpg" alt="Mountain Bean Café staff welcoming visitors inside the café" width="120">
+        </a>
+        <a href="../images/coffeeshopview.jpg" target="_blank">
+          <img src="../images/coffeeshopview.jpg" alt="Scenic mountain view from the café’s window" width="120">
+        </a>
+        <a href="../images/coffeeshopmenu.jpg" target="_blank">
+          <img src="../images/coffeeshopmenu.jpg" alt="Handwritten coffee menu board at Mountain Bean Café" width="120">
+        </a>
+        <!-- Add 6 more images below, using your own images and alt text -->
+        <a href="../images/gallery1.jpg" target="_blank">
+          <img src="../images/gallery1.jpg" alt="Locally roasted coffee beans in burlap sacks" width="120">
+        </a>
+        <a href="../images/gallery2.jpg" target="_blank">
+          <img src="../images/gallery2.jpg" alt="Barista pouring latte art into a cup" width="120">
+        </a>
+        <a href="../images/gallery3.jpg" target="_blank">
+          <img src="../images/gallery3.jpg" alt="Group of hikers enjoying coffee outside the café" width="120">
+        </a>
+        <a href="../images/gallery4.jpg" target="_blank">
+          <img src="../images/gallery4.jpg" alt="Mountain Bean Café logo sign against the sunrise" width="120">
+        </a>
+        <a href="../images/gallery5.jpg" target="_blank">
+          <img src="../images/gallery5.jpg" alt="Cozy seating area with mountain-themed decor" width="120">
+        </a>
+        <a href="../images/gallery6.jpg" target="_blank">
+          <img src="../images/gallery6.jpg" alt="Close-up of a steaming cup of coffee" width="120">
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mountain Bean Café | Crafted by JasminMazaRod</p>
+  </footer>
+</body>
+</html>
